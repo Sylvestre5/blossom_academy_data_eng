@@ -3,16 +3,17 @@ from pyspark.sql import functions as F
 from pyspark.sql import SparkSession
 from pyspark.ml.feature import NGram
 from pyspark.ml.feature import Tokenizer
+import matplotlib.pyplot as plt
 
 import boto3
 
 # create spark session if one doesn’t exist already
 spark = SparkSession.builder.getOrCreate()
 
-# s3 = boto3.client('s3')
-# s3.download_file('blossom-data-engs', 'data-scientist-job-market-in-the-us.zip', 'data-scientist-job-market-in-the-us.zip')
-# s3.download_file('blossom-data-engs', 'all-us-stocks-tickers-company-info-logos.zip', 'all-us-stocks-tickers-company-info-logos.zip')
-#
+s3 = boto3.client('s3')
+s3.download_file('blossom-data-engs', 'data-scientist-job-market-in-the-us.zip', 'data-scientist-job-market-in-the-us.zip')
+s3.download_file('blossom-data-engs', 'all-us-stocks-tickers-company-info-logos.zip', 'all-us-stocks-tickers-company-info-logos.zip')
+
 
 #load data science dataset
 all_data = spark.read.csv(
@@ -64,3 +65,7 @@ companies = ngram.transform(companies)
 new_companies = companies.select(['ngrams','industry']).select(F.explode('ngrams').alias('ngrams'),'industry')
 new_companies.groupBy(['ngrams', 'industry']).count().orderBy("count", ascending=False).show()
 
+plt.scatter('city', 'count', c='ngrams', s='d', data=cities)
+plt.xlabel('entry a')
+plt.ylabel('entry b')
+plt.show()
