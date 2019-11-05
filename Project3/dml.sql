@@ -15,7 +15,7 @@ FROM stackoverflow_filtered.results
 group by display_name, reputation, results.views, up_votes, view_count
 order by reputation desc;
 
---Sibi has the highest reputation which means ;
+--Sumit Shukla has the highest reputation which means ;
 --1. question is voted up: +5
 --2. answer is voted up: +10
 --3. answer is marked “accepted”: +15 (+2 to acceptor)
