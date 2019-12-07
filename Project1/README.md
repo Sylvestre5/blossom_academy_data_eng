@@ -1,21 +1,37 @@
-<div align="center">
-  <h1>Blossom Academy Fall 2019 Cohort - Data Engineering</h1>
-</div>
+<h1>Blossom Academy Fall 2019 Cohort - Data Engineering</h1>
 
-	
-	
-<h2>Project One</h2>
-I built a btasic ETL pipeline to read data from a source, transform this data, 
-then load the output into a prescribed location.
+# Project Title
 
-Tools Used
-- Pandas 
+Basic ETL pipeline to read data from a source, transform this data, then load the output into a prescribed location
+
+## Getting Started
+
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+
+### Prerequisites
+
+What things you need to install and have;
+
+
+- Anaconda 
 - Amazon Simple Storage Service(S3)
-- Jupyter Notebook
-- Anaconda
 - Boto3 client
+- Amazon s3 account
 
-<h2>Task Performed</h2>
+
+### Installing
+
+A step by step series of examples that tell you how to get a development env running
+
+Say what the step will be
+
+
+* Anaconda -  https://www.anaconda.com/distribution/ (Python 3.7 version)
+* Amazon Simple Storage Service(S3) - https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html
+* Boto3 - pip install boto3
+
+
+### Tasks Performed
 
 - Setup a working environment on computer to use throughout the program.
 - Write a python script with the following features; 
@@ -28,4 +44,5 @@ Tools Used
           <p> - AVRO</p>
 - Upload the resulting 3 file to your S3 buckets blossom-data-eng-[student-name].
 - Commit your code to your github repository.
+
 
