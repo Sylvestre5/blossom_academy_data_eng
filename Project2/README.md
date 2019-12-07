@@ -52,11 +52,11 @@ Below are the steps to run commands:
 Create a Jupyter notebook that contains the following tasks:
 - Load the data scientist job market dataset and us stocks datasets from the s3 bucket ‘s3://blossom-data-engs’ onto your computer
 - Read the data with pyspark
-     <p>* Read the alldata.csv from the data scientist datasets
+        * Read the alldata.csv from the data scientist datasets
 - Join the 2 datasets.
 - Write a function to generate n-grams (unigram & bigram) from a given text/description. 
 - Write another function which uses the function from (c) to create 2 spark data frames which have 3 columns in the order of frequency: 
-     <p>*{Ngram, City, Frequency}
-     <p>*{Ngram, Industry, Frequency}
+        * {Ngram, City, Frequency}
+        * {Ngram, Industry, Frequency}
 - Use any visualization to compare a role between 2 cities
 - Commit this notebook into your github repo
