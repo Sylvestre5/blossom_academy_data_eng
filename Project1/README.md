@@ -23,8 +23,6 @@ What things you need to install and have;
 
 A step by step series of examples that tell you how to get a development env running
 
-Say what the step will be
-
 
 * Anaconda -  https://www.anaconda.com/distribution/ (Python 3.7 version)
 * Amazon Simple Storage Service(S3) - https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html
