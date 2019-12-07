@@ -2,7 +2,7 @@
 
 # Project Title
 
-Basic ETL pipeline to read data from a source, transform this data, then load the output into a prescribed location
+SCRAPING REAL ESTATES LISTINGS FROM MEQASA
 
 ## Getting Started
 
