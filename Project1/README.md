@@ -22,10 +22,10 @@ Tools Used
     <p>a. Download the 7+ Million Dataset from S3 [bucket: blossom-data-engs key:-project1/free-7-million-company-dataset.zip].</p>
     <p>b. Read the file with pandas.</p>
     <p>c. Filter out companies without a domain name using pandas.</p>
-    <p>d. Write out the output(from point c.) in the following formats</p>
-         - Parquet
-         - JSON (compressed using gzip)
-         - AVRO
+    <p>d. Write out the output(from point c.) in the following formats;</p>
+          <p> - Parquet</p>
+          <p> - JSON (compressed using gzip)</p>
+          <p> - AVRO</p>
 - Upload the resulting 3 file to your S3 buckets blossom-data-eng-[student-name].
 - Commit your code to your github repository.
 
