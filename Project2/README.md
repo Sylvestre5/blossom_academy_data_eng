@@ -1,6 +1,8 @@
 <h1>Blossom Academy Fall 2019 Cohort - Data Engineering</h1>
 
-# Basic ETL pipeline to read data from a source, transform this data, then load the output into a prescribed location
+# Project Title
+
+Basic ETL pipeline to read data from a source, transform this data, then load the output into a prescribed location
 
 ## Getting Started
 
