@@ -1,5 +1,7 @@
 <div align="center">
-   <h1>Blossom Academy Fall 2019 Cohort - Data Engineering</h1>
+  <h1>Blossom Academy Fall 2019 Cohort - Data Engineering</h1>
+</div>
+
 	
 	
 <h2>Project One</h2>
@@ -26,7 +28,4 @@ Tools Used
          - AVRO
 - Upload the resulting 3 file to your S3 buckets blossom-data-eng-[student-name].
 - Commit your code to your github repository.
-
-</div>
-
 
