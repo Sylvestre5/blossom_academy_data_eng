@@ -17,6 +17,8 @@ What things you need to install and have;
 - Amazon Simple Storage Service(S3)
 - Boto3 client
 - Amazon s3 account
+- PySpark 
+- Jupyter Notebook
 
 
 ### Installing
@@ -29,20 +31,32 @@ Say what the step will be
 * Anaconda -  https://www.anaconda.com/distribution/ (Python 3.7 version)
 * Amazon Simple Storage Service(S3) - https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html
 * Boto3 - pip install boto3
+* Pyspark - pip install pyspark
 
+A recent version of Python is required, preferably 3.5 or 3.7.
+
+### Setup
+Setup the working environment on your computer, for instance Project-two.
+
+Below are the steps to run commands:
+
+1. Create a virtual env:
+	* Using Python 3.5: `python3 -m venv project-two`
+2. Activate the virtual env:
+	* On Linux, MacOS, other UNIX: `source project-two/bin/activate`
+	* On Windows: `project-two\Scripts\activate`
+3. Install requirements: `pip install -r requirements.txt` 
 
 ### Tasks Performed
 
-- Setup a working environment on computer to use throughout the program.
-- Write a python script with the following features; 
-    <p>a. Download the 7+ Million Dataset from S3 [bucket: blossom-data-engs key:-project1/free-7-million-company-dataset.zip].</p>
-    <p>b. Read the file with pandas.</p>
-    <p>c. Filter out companies without a domain name using pandas.</p>
-    <p>d. Write out the output(from point c.) in the following formats;</p>
-          <p> - Parquet</p>
-          <p> - JSON (compressed using gzip)</p>
-          <p> - AVRO</p>
-- Upload the resulting 3 file to your S3 buckets blossom-data-eng-[student-name].
-- Commit your code to your github repository.
-
-
+Create a Jupyter notebook that contains the following tasks:
+- Load the data scientist job market dataset and us stocks datasets from the s3 bucket ‘s3://blossom-data-engs’ onto your computer
+- Read the data with pyspark
+     <p>* Read the alldata.csv from the data scientist datasets
+- Join the 2 datasets.
+- Write a function to generate n-grams (unigram & bigram) from a given text/description. 
+- Write another function which uses the function from (c) to create 2 spark data frames which have 3 columns in the order of frequency: 
+     <p>*{Ngram, City, Frequency}
+     <p>*{Ngram, Industry, Frequency}
+- Use any visualization to compare a role between 2 cities
+- Commit this notebook into your github repo
