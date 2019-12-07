@@ -83,7 +83,7 @@ Assuming you have a folder on your computer named Blossom_Academy, create a new 
 2. Create one table called results. 
 
 
-#### 4. DATA LOADING
+#### DATA LOADING
 3. Use spark to write the results into this table with the snippet below.
 4. Create a btree index on the reputation column within the results table.
 5. Create a hash index on the display_name column within the results table.
