@@ -2,7 +2,7 @@
 
 # Project Title
 
-Basic ETL pipeline to read data from a source, transform this data, then load the output into a prescribed location
+BASIC END TO END EXTRACT TRANSFORM LOAD(ETL) PIPELINE
 
 ## Getting Started
 
