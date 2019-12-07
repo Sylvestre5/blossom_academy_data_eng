@@ -28,10 +28,21 @@ A step by step series of examples that tell you how to get a development env run
 * Amazon Simple Storage Service(S3) - https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html
 * Boto3 - pip install boto3
 
+A recent version of Python is required, preferably 3.5 or 3.7.
+
+### Setup
+Setup the working environment on your computer, for instance Project-two.
+
+Below are the steps to run commands:
+
+1. Create a virtual env:
+	* Using Python 3.5: `python3 -m venv project-three`
+2. Activate the virtual env:
+	* On Linux, MacOS, other UNIX: `source project-four/bin/activate`
+	* On Windows: `project-three\Scripts\activate`
+3. Install requirements: `pip install -r requirements.txt` 
 
 ### Tasks Performed
-
-- Setup a working environment on computer to use throughout the program.
 - Write a python script with the following features; 
     <p>a. Download the 7+ Million Dataset from S3 [bucket: blossom-data-engs key:-project1/free-7-million-company-dataset.zip].</p>
     <p>b. Read the file with pandas.</p>
